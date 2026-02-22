@@ -113,7 +113,7 @@ vim.opt.showmode = false
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = 'unnamed,unnamedplus'
 
 -- Enable break indent
 vim.opt.breakindent = true
@@ -653,6 +653,8 @@ require('lazy').setup({
         javascript = { 'prettierd' },
         typescript = { 'prettierd' },
         typescriptreact = { 'prettierd' },
+        html = { 'prettierd' },
+        css = { 'prettierd' },
       },
     },
   },
@@ -875,10 +877,6 @@ require('lazy').setup({
     'davidmh/mdx.nvim',
     config = true,
     dependencies = { 'nvim-treesitter/nvim-treesitter' },
-  },
-  {
-    'windwp/nvim-ts-autotag',
-    opts = {},
   },
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
